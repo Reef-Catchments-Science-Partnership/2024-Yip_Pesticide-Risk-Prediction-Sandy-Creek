@@ -10,11 +10,10 @@ library(tidyr)
 ##########################
 
 # set your working directory
-setwd("C:/Users/uqcneela/OneDrive - The University of Queensland/General - Sci SEES Res Reef Catchment Science Partnership/Project 3/Catherine Neelamraju/Supervisorship")
+# setwd("C:/Users/uqcneela/OneDrive - The University of Queensland/General - Sci SEES Res Reef Catchment Science Partnership/Project 3/Catherine Neelamraju/Supervisorship")
 
 # read in original, unformatted data
 Pest_Dat <- read.csv("Pest_Dat_CN.csv", header = TRUE)
-#heeeyyyy
 
 #############################
 # clean and reformat data
