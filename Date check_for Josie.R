@@ -1,19 +1,21 @@
-
+## Cath wrote this to clean and format the data extracted from Tahbil for the PRM calculator
+## This process can be done on multiple sites, this code is just for the site "Sandy Creek Homebush"
 
 # load libraries
 library(readxl)
 library(lubridate)
 library(dplyr)
 library(tidyr)
+
 ##########################
 # load data
 ##########################
 
 # set your working directory
-# setwd("C:/Users/uqcneela/OneDrive - The University of Queensland/General - Sci SEES Res Reef Catchment Science Partnership/Project 3/Catherine Neelamraju/Supervisorship")
+# setwd(/Users/josie/Documents/GitHub/2024-Yip_Pesticide-risk-prediction-Sandy-Creek)
 
 # read in original, unformatted data
-Pest_Dat <- read.csv("Pest_Dat_CN.csv", header = TRUE)
+Pest_Dat <- read.csv("Concentration_2024-05-14_17-12.csv", header = TRUE)
 
 #############################
 # clean and reformat data
@@ -26,9 +28,11 @@ str(Pest_Dat)
 Pest_Dat$Date.Time <- as.POSIXct(Pest_Dat$Date.Time, format="%d/%m/%Y %H:%M", tz = "Australia/Brisbane")
 str(Pest_Dat) # check
 
+## this step was added because the original file was edited, this step can otherwise be skipped
 # remove unnecessary Date column (the one where hours:minutes have been removed) and concatenated concentration
-Pest_Dat <- Pest_Dat[-c(13, 22)] 
+# Pest_Dat <- Pest_Dat[-c(13, 22)] 
 unique(unlist(Pest_Dat$Quality.Code, use.names = TRUE)) #check levels
+
 # create concatenated <LOR column
 # note this is a nested command
 # there is an if/else statement that says if there is a "<" sign then concatenate Operator and Value
@@ -50,9 +54,10 @@ Pest_Dat <- Pest_Dat %>% dplyr::filter(!(Analyte=="")) # remove rows with no dat
 ########################################################
 # check for duplicates at Sandy Ck
 #######################################################
+
 str(Pest_Dat)
 # first check for duplicates
-duplicates <-{ Pest_Dat } %>%
+duplicates <- Pest_Dat %>%
   dplyr::group_by(Site.Code, Site.Name, Sampling.Year, Date.Time, Analysis.Method, Analyte) %>%
   dplyr::summarise(n = dplyr::n(), .groups = "drop") %>% 
   dplyr::filter(n > 1L)
@@ -70,13 +75,12 @@ duplicates <- merge(Pest_Dat, duplicates, by="ID", all = T)
 # send to WQI for checking
 write.csv(duplicates, "duplicates.csv", row.names = FALSE)
 
-
 ########################################################
 # pivot wide so each pesticide is in its own column
 #######################################################
 
 # subset to Sandy first
-#SandyHB <- "Sandy Creek at Homebush"
+# SandyHB <- "Sandy Creek at Homebush"
 subset_df <- Pest_Dat[Pest_Dat$Site.Name == "Sandy Creek at Homebush", ]
 
 # remove unecessary columns in Pest_Dat_wide (Site.Code etc not needed)
@@ -90,12 +94,11 @@ Sandy_wide <- subset_df %>% pivot_wider(names_from = Analyte, values_from = Conc
 #############################################################
 
 # read in template first (allows cross checking of header names)
-setwd("C:/Users/uqcneela/OneDrive - The University of Queensland/General - Sci SEES Res Reef Catchment Science Partnership/Project 3/Catherine Neelamraju/Supervisorship/Calculator files")
+setwd("/Users/josie/Documents/GitHub/2024-Yip_Pesticide-risk-prediction-Sandy-Creek")
 
 # read in template
 Template <- read.csv("Tidy Format Example.csv", header = TRUE)
 colnames(Template)
-
 
 # fix column headers to match template
 colnames(Sandy_wide)
@@ -114,8 +117,7 @@ colnames(Sandy_wide)
 colnames(Template)
 unique(unlist(Sandy_wide$Site.Name, use.names = TRUE)) 
 str(Sandy_wide)
-Sandy_wide <- Sandy_wide[order(Sandy_wide$Site.Name, Sandy_wide$Date),]
-
+Sandy_wide <- Sandy_wide[names(Template)]
 
 # Function to check if all values in a row are NULL
 all_null <- function(row) {
@@ -131,4 +133,4 @@ print(which(null_rows))
 # this should now be okay to upload to the PRM calculator
 write.csv(Sandy_wide,"Sandy at Homebush.csv", row.names = FALSE)
 
-
+## repeat this process for all sites if needed
