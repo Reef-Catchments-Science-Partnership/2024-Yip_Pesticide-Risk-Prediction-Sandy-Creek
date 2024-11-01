@@ -11,11 +11,8 @@ library(tidyr)
 # load data
 ##########################
 
-# set your working directory
-# setwd(/Users/josie/Documents/GitHub/2024-Yip_Pesticide-risk-prediction-Sandy-Creek)
-
 # read in original, unformatted data
-Pest_Dat <- read.csv("Concentration_2024-05-14_17-12.csv", header = TRUE)
+Pest_Dat <- read.csv("Data/Script1_PRM/Concentration_2024-05-14_17-12.csv", header = TRUE)
 
 #############################
 # clean and reformat data
@@ -94,10 +91,7 @@ Sandy_wide <- subset_df %>% pivot_wider(names_from = Analyte, values_from = Conc
 #############################################################
 
 # read in template first (allows cross checking of header names)
-setwd("/Users/josie/Documents/GitHub/2024-Yip_Pesticide-risk-prediction-Sandy-Creek")
-
-# read in template
-Template <- read.csv("Tidy Format Example.csv", header = TRUE)
+Template <- read.csv("Data/Script1_PRM/Tidy Format Example.csv", header = TRUE)
 colnames(Template)
 
 # fix column headers to match template
