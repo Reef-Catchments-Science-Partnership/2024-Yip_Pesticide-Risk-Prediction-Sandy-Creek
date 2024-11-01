@@ -6,7 +6,7 @@ library(tidyr)
 
 # Set the location of the folder that contains the .xls files you want to upload
 # Or set your working directory using Session > Set Working Directory > Choose Directory
-folder <- "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/Landuse_clipped_Excel/Upstream"
+folder <- "Data/Script2_LandUse/Upstream"
 
 # Create a list of all .xls files in the folder
 file_list <- list.files(path = folder, pattern = "*.xls", full.names = TRUE)
@@ -88,6 +88,6 @@ final_df$Relative.Dryland.Cropping <- 0
 # Only needed if 'PointID' is in a wrong format
 # final_df$PointID <- as.numeric(sub("^2", "", final_df$PointID))
 
-write.csv(final_df, "Upstream_LU.csv", row.names = FALSE)
+write.csv(final_df, "Outputs/Script2_LandUse/Upstream_LU.csv", row.names = FALSE)
 
 # Ready for the Regression Model
