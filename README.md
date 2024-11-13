@@ -58,8 +58,6 @@ The code serves the purpose of preparing data for prediction and validation, as 
    Generate plots for analysing the relationship between pesticide risks and other variables.
 
 ## 3. Outputs
-## Data
-
 ### Duplicates.csv
 - For Script 1 – formatting pesticide concentration data  
   Example output for checking duplicates.
