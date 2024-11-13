@@ -61,29 +61,28 @@ The code serves the purpose of preparing data for prediction and validation, as 
 ## Data
 
 ### Date check for Josie
-Clean and format water quality monitoring data for the Pesticide Risk Metric calculator.
+#### Script 1 - Formatting Pesticide Concentration Data
+**Duplicates.csv**  
+- Example output for checking duplicates
 
-- **Duplicates.csv**  
-  Example output for checking duplicates.
+**Sandy at Homebush**  
+- Example output of the formatted pesticide concentration data.
 
-- **Sandy at Homebush**  
-  Example output of the formatted pesticide concentration data.
+#### Script 2 - LU_Format (Land Use)
+**LU_Format Options.R**
+- Clean and format land use data for the Land Use Pesticide Risk regression model.
 
-### LU_Format Options.R
-Clean and format land use data for the Land Use Pesticide Risk regression model.
-
-- **Upstream_LU.csv**  
+**Upstream_LU.csv**  
   Example output of formatted land use data.
+#### Script 3 - Validation Plots
 
-### Validation_plots.R
-Generate plots for pesticide risk prediction validation.
+**Validation_plots.R**
+- Generate plots for pesticide risk prediction validation.
 
-- **Validation_plots.png**  
-  Example output for the validation plots.
+**Validation_plots.png**  
+- Example output for the validation plots.
 
-### Plot_finals.R
-Generate plots for analysing the relationship between pesticide risks and other variables.
-
+#### Script 4 - Plot
 - **Sugar_plot.png**  
   Relationship plot between predicted pesticide risk and the proportion of sugarcane land use.
 
