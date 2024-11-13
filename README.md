@@ -58,23 +58,20 @@ The code serves the purpose of preparing data for prediction and validation, as 
    Generate plots for analysing the relationship between pesticide risks and other variables.
 
 ## 3. Outputs
-## Data
-
-### Date check for Josie
-#### Script 1 - Formatting Pesticide Concentration Data
+### Script 1 - Formatting Pesticide Concentration Data
 **Duplicates.csv**  
 - Example output for checking duplicates
 
 **Sandy at Homebush**  
 - Example output of the formatted pesticide concentration data.
 
-#### Script 2 - LU_Format (Land Use)
+### Script 2 - LU_Format (Land Use)
 **LU_Format Options.R**
 - Clean and format land use data for the Land Use Pesticide Risk regression model.
 
 **Upstream_LU.csv**  
-  Example output of formatted land use data.
-#### Script 3 - Validation Plots
+- Example output of formatted land use data.
+### Script 3 - Validation Plots
 
 **Validation_plots.R**
 - Generate plots for pesticide risk prediction validation.
