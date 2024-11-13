@@ -20,12 +20,12 @@ The code serves the purpose of preparing data for prediction and validation, as 
 ## Data
 
 **Concentration_2024-05-14_17-12.csv**
-- For Script 1 – formatting pesticide concentration data  
-  Containing pesticide concentration data downloaded from Tahbil Water Quality Portal. Format and input into PRM calculator.
+- For Script 1 – formatting pesticide concentration data
+- Containing pesticide concentration data downloaded from Tahbil Water Quality Portal. Format and input into PRM calculator.
 
 **Tidy Format Example.csv**
-- For Script 1 – formatting pesticide concentration data  
-  Format reference for the concentration data.
+- For Script 1 – formatting pesticide concentration data
+- Format reference for the concentration data.
 
 **LandUse_exportpoints_upX**
 - For Script 2 – LU_Format
@@ -61,7 +61,8 @@ The code serves the purpose of preparing data for prediction and validation, as 
 
 
 ## 4. Citation
-Reef Catchments Science Partnership. (2024). *Te Ngaio TSS-RV*. GitHub. https://github.com/Reef-Catchments-Science-Partnership/2024-Te-Ngaio_TSS-RV
+Reef Catchments Science Partnership. (2024). *Yip Pesticide Risk Prediction Sandy Creek*. GitHub. https://github.com/Reef-Catchments-Science-Partnership/2024-Yip_Pesticide-risk-prediction-Sandy-Creek
+
 
 ## 5. Contact Details
 Please contact rcsp.info@uq.edu.au for any inquiries related to this repository.
