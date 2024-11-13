@@ -58,38 +58,43 @@ The code serves the purpose of preparing data for prediction and validation, as 
    Generate plots for analysing the relationship between pesticide risks and other variables.
 
 ## 3. Outputs
-### Duplicates.csv
-- For Script 1 – formatting pesticide concentration data
-- Example output for checking duplicates.
+## Data
 
-### Sandy at Homebush
-- For Script 1 – formatting pesticide concentration data
-- Example output of the formatted pesticide concentration data.
+### Date check for Josie
+Clean and format water quality monitoring data for the Pesticide Risk Metric calculator.
 
-### Upstream_LU.csv
-- For Script 2 – LU_Format
-- Example output of formatted land use data.
+- **Duplicates.csv**  
+  Example output for checking duplicates.
 
-### Validation_plots.png
-- For Script 3 – Validation_plots
-- Example output for the validation plots.
+- **Sandy at Homebush**  
+  Example output of the formatted pesticide concentration data.
 
-### Sugar_plot.png
-- For Script 4 – Plots
-- Relationship plot between predicted pesticide risk and the proportion of sugarcane land use.
+### LU_Format Options.R
+Clean and format land use data for the Land Use Pesticide Risk regression model.
 
-### Conservation_plot.png
-- For Script 4 – Plots
-- Relationship plot between predicted pesticide risk and the proportion of conservation land use.
+- **Upstream_LU.csv**  
+  Example output of formatted land use data.
 
-### Horticulture_plot.png
-- For Script 4 – Plots
-- Relationship plot between predicted pesticide risk and the proportion of horticulture land use.
+### Validation_plots.R
+Generate plots for pesticide risk prediction validation.
 
-### Urban_plot.png
-- For Script 4 – Plots
-- Relationship plot between predicted pesticide risk and the proportion of urban land use.
+- **Validation_plots.png**  
+  Example output for the validation plots.
 
+### Plot_finals.R
+Generate plots for analysing the relationship between pesticide risks and other variables.
+
+- **Sugar_plot.png**  
+  Relationship plot between predicted pesticide risk and the proportion of sugarcane land use.
+
+- **Conservation_plot.png**  
+  Relationship plot between predicted pesticide risk and the proportion of conservation land use.
+
+- **Horticulture_plot.png**  
+  Relationship plot between predicted pesticide risk and the proportion of horticulture land use.
+
+- **Urban_plot.png**  
+  Relationship plot between predicted pesticide risk and the proportion of urban land use.
 
 
 ## 4. Credits and Acknowledgements 
