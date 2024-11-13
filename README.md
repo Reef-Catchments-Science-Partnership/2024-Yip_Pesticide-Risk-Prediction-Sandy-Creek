@@ -57,12 +57,49 @@ The code serves the purpose of preparing data for prediction and validation, as 
 4. **Plot_finals.R**  
    Generate plots for analysing the relationship between pesticide risks and other variables.
 
-## 3. Credits and Acknowledgements 
+## 3. Outputs
+## Data
+
+### Duplicates.csv
+- For Script 1 – formatting pesticide concentration data  
+  Example output for checking duplicates.
+
+### Sandy at Homebush
+- For Script 1 – formatting pesticide concentration data  
+  Example output of the formatted pesticide concentration data.
+
+### Upstream_LU.csv
+- For Script 2 – LU_Format  
+  Example output of formatted land use data.
+
+### Validation_plots.png
+- For Script 3 – Validation_plots  
+  Example output for the validation plots.
+
+### Sugar_plot.png
+- For Script 4 – Plots  
+  Relationship plot between predicted pesticide risk and the proportion of sugarcane land use.
+
+### Conservation_plot.png
+- For Script 4 – Plots  
+  Relationship plot between predicted pesticide risk and the proportion of conservation land use.
+
+### Horticulture_plot.png
+- For Script 4 – Plots  
+  Relationship plot between predicted pesticide risk and the proportion of horticulture land use.
+
+### Urban_plot.png
+- For Script 4 – Plots  
+  Relationship plot between predicted pesticide risk and the proportion of urban land use.
 
 
-## 4. Citation
+
+## 4. Credits and Acknowledgements 
+
+
+## 5. Citation
 Reef Catchments Science Partnership. (2024). *Yip Pesticide Risk Prediction Sandy Creek*. GitHub. https://github.com/Reef-Catchments-Science-Partnership/2024-Yip_Pesticide-risk-prediction-Sandy-Creek
 
 
-## 5. Contact Details
+## 6. Contact Details
 Please contact rcsp.info@uq.edu.au for any inquiries related to this repository.
