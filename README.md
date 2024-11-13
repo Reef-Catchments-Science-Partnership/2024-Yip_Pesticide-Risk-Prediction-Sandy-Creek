@@ -1,3 +1,6 @@
+![RCSP LOGO_Wide 2 (1)](https://github.com/user-attachments/assets/eb142ac1-314c-4200-985d-612b2d25efb9)
+
+
 # Fine Scale Pesticide Risk Prediction Based on Land Use
 ## Project Overview
 
