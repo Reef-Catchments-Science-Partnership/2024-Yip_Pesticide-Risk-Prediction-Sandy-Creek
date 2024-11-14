@@ -6,8 +6,10 @@
 
 **Owner/s:** Josie (Yee Hang) Yip and Ryan Turner  
 **Project Name:** Fine Scale Pesticide Risk Prediction Based on Land Use
+
 **Date Started:** 19/02/2024  
 **Date Last Updated:** 13/11/2024 
+
 ### Project Description
 The aim of the project is to assess the predictability of using land use data to achieve fine-scale prediction of pesticide mixture risks in waterways. 
 The code serves the purpose of preparing data for prediction and validation, as well as for data visualisation. 
@@ -17,8 +19,9 @@ The code serves the purpose of preparing data for prediction and validation, as 
 1. Data
 2. Scripts
 3. Credits and Acknowledgements
-4. Citation
-5. Contact Details
+4. Outputs
+5. Citation
+6. Contact Details
 
 ## 1. Data
 
@@ -46,16 +49,16 @@ The code serves the purpose of preparing data for prediction and validation, as 
 
 
 ## 2. Scripts
-1. **Date check for Josie**  
+**1. Date check for Josie**  
    - Clean and format water quality monitoring data for the Pesticide Risk Metric calculator.
 
-2. **LU_Format_options.R**  
+**2. LU_Format_options.R**  
    - Clean and format land use data for the Land Use Pesticide Risk regression model.
 
-3. **validation_plots.R**  
+**3. validation_plots.R**  
    - Generate plots for pesticide risk prediction validation.
 
-4. **plot_finals.R**  
+**4. Plot_finals.R**  
    - Generate plots for analysing the relationship between pesticide risks and other variables.
 
 ## 3. Outputs
