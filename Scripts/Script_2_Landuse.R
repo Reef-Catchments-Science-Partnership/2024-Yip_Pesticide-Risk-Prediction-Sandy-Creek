@@ -6,7 +6,7 @@ library(tidyr)
 
 # Set the location of the folder that contains the .xls files you want to upload
 # Or set your working directory using Session > Set Working Directory > Choose Directory
-folder <- "Data/Script2_LandUse/Upstream"
+folder <- "Data/Script_2_Landuse/1km_points"
 
 # Create a list of all .xls files in the folder
 file_list <- list.files(path = folder, pattern = "*.xls", full.names = TRUE)

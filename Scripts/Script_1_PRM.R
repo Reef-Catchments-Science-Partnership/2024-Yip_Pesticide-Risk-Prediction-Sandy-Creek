@@ -12,7 +12,7 @@ library(tidyr)
 ##########################
 
 # read in original, unformatted data
-Pest_Dat <- read.csv("Data/Script1_PRM/Concentration_2024-05-14_17-12.csv", header = TRUE)
+Pest_Dat <- read.csv("Data/Script_1_PRM/Concentration_2024-05-14_17-12.csv", header = TRUE)
 
 #############################
 # clean and reformat data

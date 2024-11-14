@@ -1,9 +1,9 @@
 library(gridExtra)
 library(gtable)
 
-setwd("/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Validation/Inputs")
-PRM_pred <- read.csv("1516added_PRM.csv")
-MFD_pred <- read.csv("Updated_MFD_PRM.csv")
+# Load data
+PRM_pred <- read.csv("Data/Script_3_Validation_Plots/1516added_PRM.csv", header = TRUE)
+MFD_pred <- read.csv("Data/Script_3_Validation_Plots/Updated_MFD_PRM.csv", header = TRUE)
 
 # Set up the frame for the plots
 par(mfrow=c(3, 2))
@@ -126,10 +126,11 @@ legend(0.6,90,
        cex = 1.5,
        y.intersp = 0.1 )                         
 
+###################################################
 
 # Export using the 'Plots' tab, save as image
 # Image format: PNG
 # Dimension: Width(1000mm), Height(1300mm)
 # File name: "validation_plots.png"
-# Directory: "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Validation/Outputs"
+# Directory: "Outputs/Script_3_Validation_Plots"
 

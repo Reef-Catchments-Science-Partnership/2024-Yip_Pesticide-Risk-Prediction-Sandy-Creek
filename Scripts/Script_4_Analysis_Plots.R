@@ -2,13 +2,16 @@ library(ggplot2)
 library(ggrepel)
 library(readxl)
 library(ggpmisc)
+library(readxl)
 
-setwd("/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/Predictions_points")
-up_points <- read_xls("points_variables_all_up.xls")
+# Load data
+up_points <- read_xls("Data/Script_4_Analysis_Plots/points_variables_all_up.xls", header = TRUE)
 
+# Convert data to numeric
 up_points$Relative.Sugar = as.numeric(up_points$Relative.Sugar)
 up_points$Relative.Conservation = as.numeric(up_points$Relative.Conservation)
 up_points$Relative.Urban = as.numeric(up_points$Relative.Urban)
+up_points$Relative.Horticulture = as.numeric(up_points$Relative.Horticulture)
 
 #######################################
 
@@ -37,7 +40,7 @@ sugar_plot
 ## Image format: PNG
 ## Dimension: Width(1300mm), Height(900mm)
 ## File name: "sugar_plot.png"
-## Directory: "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Analysis/Output"
+## Directory: "Outputs/Script_4_Analysis_Plots"
 
 #######################################
 
@@ -58,7 +61,7 @@ urban_plot
 ## Image format: PNG
 ## Dimension: Width(1300mm), Height(900mm)
 ## File name: "urban_plot.png"
-## Directory: "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Analysis/Output"
+## Directory: "Outputs/Script_4_Analysis_Plots"
 
 #######################################
 
@@ -77,7 +80,7 @@ conservation_plot
 ## Image format: PNG
 ## Dimension: Width(1300mm), Height(900mm)
 ## File name: "conservation_plot.png"
-## Directory: "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Analysis/Output"
+## Directory: "Outputs/Script_4_Analysis_Plots"
 
 #######################################
 
@@ -92,11 +95,11 @@ horticulture_plot <- ggplot(up_points, aes(x = Relative.Horticulture, y = MsPAF_
     axis.title.y = element_text(size = 22))
 horticulture_plot
 
+###################################################
+
 # Export using the 'Plots' tab, save as image
 ## Image format: PNG
 ## Dimension: Width(1300mm), Height(900mm)
 ## File name: "horticulture_plot.png"
-## Directory: "/Users/josie/Library/Mobile Documents/com~apple~CloudDocs/0 Honours/RStudio/Analysis/Output"
+## Directory: "Outputs/Script_4_Analysis_Plots"
 
-
-#######################################
