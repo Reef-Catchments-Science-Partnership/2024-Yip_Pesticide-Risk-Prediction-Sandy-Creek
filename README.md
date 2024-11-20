@@ -92,7 +92,17 @@ The code serves the purpose of preparing data for prediction and validation, as 
    - Relationship plot between predicted pesticide risk and the proportion of urban land use.
 
 
-## 4. Credits and Acknowledgements 
+## 4. References 
+
+1. Bezzina, A., Neelamraju, C., Strauss, J., Kaminski, H., Roberts, C., Glen, J., & Dias, F. (2022). *CatchThemAll.PRM: Pesticide Risk Metric Calculations. R package*. Water Quality Monitoring & Investigations, Department of Environment and Science, Queensland Government. GitHub Repository. https://github.com/AlexWaterboyBezzina/CatchThemAll.PRM
+
+2. Warne, M., Neelamraju, C., Strauss, J., Smith, R., Turner, R., & Mann, R. (2020). *Development of a Method for Estimating the Toxicity of Pesticide Mixtures and a Pesticide Risk Baseline for the Reef 2050 Water Quality Improvement Plan*. https://doi.org/10.13140/RG.2.2.24439.55202
+
+3. Water Quality & Investigations. (2024a). *Tahbil - Water Quality Data Portal*. Queensland Government, Brisbane. Water Data Portal. https://apps.des.qld.gov.au/water-data-portal
+
+4. Water Quality & Investigations. (2023). *Pesticide Risk Metric Dashboard*. Department of Environment and Science, Brisbane, Australia. PRM Dashboard. https://prmdashboard.des.qld.gov.au/
+
+5. Water Quality & Investigations. (2023). *Pesticide Risk Metric Calculator*. Department of Environment and Science, Brisbane, Australia. PRM Calculator. https://prmcalculator.des.qld.gov.au/
 
 
 ## 5. Citation
